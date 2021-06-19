@@ -2,11 +2,11 @@ const express = require('express');
 const app = express();
 
 app.get('/',(req,res)=> {
-    res.send("Hello World");
+    res.json({mensagem:"Hello world"});
 });
 
 app.get('/pt-br',(req,res)=>{
-    res.send("Olá mundo!");
+    res.json({mensagem : "Olá mundo"});
 });
 
 app.listen( 8080, () => {
